@@ -1,14 +1,22 @@
 #include "main.h"
 
 /**
- * _islower - Write a function that checks for lowercase character.
- *
+ * int _isalpha - Write a function that checks for lowercase character.
+ * @c: Number to pass to _islower function
  * Return: Always 0.
  */
-int _islower(int c)
+int _isalpha(int c)
 {
-if ((c >= 61) && (c <= 122))
--putchar('1');
-else
-_putchar('0');
+for(c = 65; c <= 122; c++)
+{
+if ((c >= 97) && (c <= 122))
+{
+return (1);
+}
+else if ((c >= 65) && (c <= 90))
+{
+return (1);
+}
+}
+return (0);
 }
