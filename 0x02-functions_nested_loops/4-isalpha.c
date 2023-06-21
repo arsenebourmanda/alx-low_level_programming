@@ -7,16 +7,10 @@
  */
 int _isalpha(int c)
 {
-for (c = 65; c <= 122; c++)
-{
-if ((c >= 97) && (c <= 122))
+if ((c >= 97 && c <= 122) || (c >= 65 &&c <= 97))
 {
 return (1);
 }
-else if ((c >= 65) && (c <= 97))
-{
-return (1);
-}
-}
+
 return (0);
 }
