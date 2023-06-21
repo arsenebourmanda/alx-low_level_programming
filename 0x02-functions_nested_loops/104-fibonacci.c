@@ -1,13 +1,9 @@
 #include <stdio.h>
-
-
-	/**
-	 * main - fibonacci <3
-	 *
-	 * Purpose - no hardcode
-	 *
-	 * Return:  (Success)
-	 */
+/**
+* main - fibonacci
+*
+* Return:  Always 0
+*/
 
 
 	int main(void)
