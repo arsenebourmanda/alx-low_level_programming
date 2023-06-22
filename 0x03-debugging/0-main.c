@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
-* main - Evaluate whether a function is positive or negative
-* Return : 0
-*/
+ * main - Evalates a function that prints whether a integer is + or -
+ * Return: 0
+ */
+
 int main(void)
 {
 int i;
