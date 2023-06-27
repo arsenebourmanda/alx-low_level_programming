@@ -7,11 +7,11 @@ Task 2
  */
 int _strlen(char *s)
 {
-int p = 0;
-/ incremeant up to when the last character is NULL, \0 /
-while (*(s + p) != 0)
+int longi = 0;
+while (*s != '\0')
 {
-p++;
+longi++;
+s++;
 }
-return (p);
+return (longi);
 }
