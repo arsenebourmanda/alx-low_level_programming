@@ -13,7 +13,7 @@ int i, j;
 for (i = 0, j = n; i < j; i++)
 {
 dest[i] = src[i];
-j--;
+n--;
 }
 return (dest);
 }
