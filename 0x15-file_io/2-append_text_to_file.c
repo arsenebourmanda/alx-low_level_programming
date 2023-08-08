@@ -24,5 +24,4 @@ if (a == -1 || b == -1)
 return (-1);
 close(o);
 return (1);
-}ss:wq
-
+}
