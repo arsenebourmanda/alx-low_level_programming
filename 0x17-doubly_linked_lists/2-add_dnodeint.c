@@ -7,7 +7,7 @@
  * @n: element's value
  * Return: new element's address
  */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *tete;
 	dlistint_t *nouv;
@@ -15,20 +15,17 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	nouv = malloc(sizeof(dlistint_t));
 	if (nouv == NULL)
 		return (NULL);
-
 	nouv->n = n;
-	nouv->next = NULL;
+	nouv->prev = NULL;
 	tete = *head;
 	if (tete != NULL)
 	{
-		while (tete->next != NULL)
-			tete = tete->next;
-		tete->next = nouv;
+		while (tete->prev != NULL)
+			tete = tete->prev;
 	}
-	else
-	{
-		*head = nouv;
-	}
-	nouv->prev = tete;
+	nouv->next = tete;
+	if (tete != NULL)
+		tete->prev = nouv;
+	*head = nouv;
 	return (nouv);
 }
